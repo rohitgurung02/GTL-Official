@@ -10,6 +10,11 @@
   }
 }
 
+/* #000000cc */
+/* .fixed-top{
+  background-color: #000000ab !important;
+} */
+
 .header {
   --background-color: rgba(0, 0, 0, 0);
   --default-color: #ffffff;
@@ -19,6 +24,7 @@
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
+  position: relative;
 }
 
 .header .logo {
@@ -41,7 +47,7 @@
 .header .cta-btn:focus {
   color: #fff;
   font-size: 14px;
-  padding: 7px 25px;
+  padding: 12px 25px;
   border: 2px solid white !important;
   margin: 0 0 0 30px;
   text-decoration: none;
@@ -356,8 +362,7 @@
 .hero {
   width: 100%;
   min-height: 100vh;
-  /* position: relative; */
-  padding: 80px 0;
+  padding: 0px 0 121px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -474,6 +479,50 @@
   .hero p {
     font-size: 18px;
   }
+}
+
+/* About Section */
+.about {
+  position: relative;
+  margin-top: -75px;
+}
+
+.about h3 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about .fst-italic {
+  color: color-mix(in srgb, var(--default-color), var(--contrast-color) 50%);
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  padding: 0 0 10px 30px;
+  position: relative;
+}
+
+.about .content ul i {
+  position: absolute;
+  font-size: 20px;
+  left: 0;
+  top: -3px;
+  color: var(--accent-color);
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+.about .pulsating-play-btn {
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
 }
 
 
